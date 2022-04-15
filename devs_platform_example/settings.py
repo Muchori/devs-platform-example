@@ -5,7 +5,7 @@ import environ
 
 env = environ.Env(
     # set casting, default value
-    DEBUG=(bool, False)
+    DEBUG=(bool, True)
 )
 
 # env = environ.Env()
@@ -14,18 +14,22 @@ env = environ.Env(
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+environ.Env.read_env(os.path.join(BASE_DIR, '.env'))
+
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = env("SECRET_KEY")
+SECRET_KEY = env('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env('DEBUG')
 
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1',]
+# ALLOWED_HOSTS = ['localhost', '127.0.0.1','https://devs-interaction-platform.herokuapp.com/']
+
+ALLOWED_HOSTS =['*']
 
 
 # Application definition
@@ -195,7 +199,7 @@ STATIC_URL = '/static/'
 
 # Extra places for collectstatic to find static files.
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR/ 'static'),
+    os.path.join(BASE_DIR, 'static'),
 )
 
 # STATIC_URL = '/static/'
