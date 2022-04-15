@@ -1,1 +1,1 @@
-web: gunicorn dev_search.wsgi --log-file -
+web: gunicorn devs_platform_example.wsgi --log-file -
