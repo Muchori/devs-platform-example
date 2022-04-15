@@ -1,7 +1,6 @@
 from datetime import timedelta
 from pathlib import Path
 import os
-from supabase import create_client, Client
 import environ
 
 env = environ.Env()
