@@ -200,9 +200,9 @@ EMAIL_HOST_USER = 'josephmuchori97@gmail.com'
 EMAIL_HOST_PASSWORD = 'sbqqgkgdcocnkvnx'
 
 
-# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
-STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
+# STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
 
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 # STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesSto  rage'
