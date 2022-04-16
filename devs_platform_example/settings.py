@@ -2,6 +2,7 @@ from datetime import timedelta
 from pathlib import Path
 import os
 import environ
+import cloudinary
 
 env = environ.Env(
     # set casting, default value
@@ -137,11 +138,11 @@ DATABASES = {
 #   'api_secret' : env('api_secret') 
 # }
 
-# cloudinary.config( 
-#   cloud_name = "skinny", 
-#   api_key = "971181546489667", 
-#   api_secret = "GiY4YQZUO9laalM0nutTgJtusTo" 
-# )
+cloudinary.config( 
+  cloud_name = "skinny", 
+  api_key = "971181546489667", 
+  api_secret = "GiY4YQZUO9laalM0nutTgJtusTo" 
+)
 
 
 # import dj_database_url
