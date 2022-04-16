@@ -131,11 +131,18 @@ DATABASES = {
     }
 }
 
-cloudinary.config( 
-  cloud_name =env('CLOUD_NAME'), 
-  api_key = env('API_KEY'), 
-  api_secret = env('API_SECRET') 
-)
+# CLOUDINARY = {
+#   'cloud_name': env('cloud_name'),
+#   'api_key' :env('api_key'), 
+#   'api_secret' : env('api_secret') 
+# }
+
+# cloudinary.config( 
+#   cloud_name = "skinny", 
+#   api_key = "971181546489667", 
+#   api_secret = "GiY4YQZUO9laalM0nutTgJtusTo" 
+# )
+
 
 # import dj_database_url
 # db_from_env = dj_database_url.config(conn_max_age=600)
@@ -192,7 +199,9 @@ EMAIL_HOST_USER = 'josephmuchori97@gmail.com'
 EMAIL_HOST_PASSWORD = 'sbqqgkgdcocnkvnx'
 
 
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
 
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 # STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesSto  rage'
