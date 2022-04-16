@@ -2,7 +2,6 @@ from datetime import timedelta
 from pathlib import Path
 import os
 import environ
-import cloudinary
 
 env = environ.Env(
     # set casting, default value
@@ -132,7 +131,7 @@ DATABASES = {
     }
 }
 
-cloudinary.env( 
+cloudinary.config( 
   cloud_name =env('CLOUD_NAME'), 
   api_key = env('API_KEY'), 
   api_secret = env('API_SECRET') 
