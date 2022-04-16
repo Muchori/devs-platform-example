@@ -44,6 +44,9 @@ INSTALLED_APPS = [
     
     'projects.apps.ProjectsConfig',
     'users.apps.UsersConfig',
+
+    'cloudinary_storage', 
+    'cloudinary'
 ]
 
 
@@ -128,6 +131,12 @@ DATABASES = {
     }
 }
 
+cloudinary.config( 
+  cloud_name =env('CLOUD_NAME'), 
+  api_key = env('API_KEY'), 
+  api_secret = env('API_SECRET') 
+)
+
 # import dj_database_url
 # db_from_env = dj_database_url.config(conn_max_age=600)
 # DATABASES['default'].update(db_from_env)
@@ -184,6 +193,8 @@ EMAIL_HOST_PASSWORD = 'sbqqgkgdcocnkvnx'
 
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 # STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesSto  rage'
 
 
