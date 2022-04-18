@@ -1,19 +1,19 @@
 ## Developer interaction platform
 
-Demo to the web [here](https://devs-interaction-platform.herokuapp.com/)
+Demo [here](https://devs-interaction-platform.herokuapp.com/)
 
 Is a web page like github where developers can have their projects and interact with each other :
 
 - [x] Users can be able to create an account by registering and access the account by lo
       gging.
 - [x] Updating account.
-- [x] Uploading projects and technologies used, editing and delete if need arises.
-- [x] Uploading skills.
+- [x] Upload projects and technologies used, editing and delete if need arises.
+- [x] Upload skills.
 - [x] Users can send messages to other users.
 - [x] Users can give reviews on other developers projects
 - [x] Users can also upvote or downvote a project
 
-## Project uses MVT-Model View Template architecture
+_Project uses MVT-Model View Template architecture_
 
 ## Setup
 
