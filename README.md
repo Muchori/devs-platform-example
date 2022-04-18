@@ -8,7 +8,7 @@ Is a web page like github where developers can have their projects and interact 
       gging.
 - [x] Updating account.
 - [x] Upload projects and technologies used, editing and delete if need arises.
-- [x] Upload skills.
+- [x] Upload, edit and delete skills.
 - [x] Users can send messages to other users.
 - [x] Users can give reviews on other developers projects
 - [x] Users can also upvote or downvote a project
