@@ -1,6 +1,6 @@
 ## Developer interaction platform
 
-Demo [here](https://devs-interaction-platform.herokuapp.com/)
+[Demo here](https://devs-interaction-platform.herokuapp.com/)
 
 Is a web page like github where developers can have their projects and interact with each other :
 
