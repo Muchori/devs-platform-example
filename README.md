@@ -15,7 +15,7 @@ Is a web page like github where developers can have their projects and interact 
 
 _Project uses MVT-Model View Template architecture_
 
-## Setup
+### Setup
 
 The first thing to do is to clone the repository:
 
@@ -47,4 +47,5 @@ Once `pip` has finished downloading the dependencies:
 (env)$ python manage.py runserver
 ```
 
-And navigate to `http://127.0.0.1:8000/`.
+
+And navigate to `http://127.0.0.1:8000/`
