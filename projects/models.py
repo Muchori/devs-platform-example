@@ -7,7 +7,7 @@ from users.models import Profile
 import cloudinary
 from cloudinary.models import CloudinaryField
 
-# Create your models here.
+# Create your models.
 class Project(models.Model):
     owner = models.ForeignKey(Profile, null=True, blank=True, on_delete=models.CASCADE)
     title = models.CharField(max_length=200)
